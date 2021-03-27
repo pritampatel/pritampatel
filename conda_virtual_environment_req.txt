@@ -1,0 +1,23 @@
+
+#Conda Virtual Environment Not showing up in VS Code Terminal
+1.Goto workspace settings.json
+2.paste it in that dictionary and save it
+
+
+{
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "/K",
+    "C:\\ProgramData\\Anaconda3\\Scripts\\activate.bat C:\\ProgramData\\Anaconda3"
+  ]
+}
+
+
+#Venv Virtual Environment Not showing up in VS Code Terminal
+
+
+"https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee176961(v=technet.10)?redirectedfrom=MSDN"
+
+
+1. open powershell in administrator and paste the command and choose 'A'
+#Set-ExecutionPolicy Unrestricted
